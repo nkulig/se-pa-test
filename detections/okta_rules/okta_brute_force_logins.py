@@ -1,6 +1,8 @@
 from panther_base_helpers import deep_get, okta_alert_context
 
 
+# RANDOM COMMENT
+
 def rule(event):
     return (
         deep_get(event, "outcome", "result") == "FAILURE"
